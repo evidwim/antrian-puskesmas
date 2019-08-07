@@ -1,4 +1,9 @@
 <!-- Brand and toggle get grouped for better mobile display -->
+<style type="text/css">
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #fff !important;
+}
+</style>
 <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
         <span class="sr-only">Toggle navigation</span>
