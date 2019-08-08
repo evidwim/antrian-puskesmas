@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Nama Web</title>
+  <title>Puskesmas Rivavi</title>
 
   <!-- Custom fonts for this theme -->
   <link href="<?php echo base_url('assets/user')?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -134,7 +134,9 @@
         <div class="row" style="width: 60%;">
           <div class="col-md-5 text-right"><label><h5>Nomor Antrian Anda :</label></h5></div>
           <div class="col-md-2 text-justify"><h5><?php echo $antrian_pasien ?></h5></div>
-          <div class="col-md-1"><a href="<?php echo base_url('Index/cetak')."/".$id_antrian_poli ?>" style="color: #000; background: #fff; padding: 10px;" target="_blank">cetak</a></div>
+          <?php if(!empty($id_antrian_poli)){?>
+          <div class="col-md-5"><a href="<?php echo base_url('Index/cetak')."/".$id_antrian_poli ?>" style="color: #000; background: #fff; padding: 10px;" target="_blank">cetak</a></div>
+        <?php } ?>
         </div>
         <!-- <div class="row" style="width: 60%;">
           <div class="col-md-5 text-right"><label><h5>Nomor Antrian Anda :</label></h5></div>

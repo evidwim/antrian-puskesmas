@@ -36,8 +36,10 @@ class Index extends CI_Controller {
 				$data['nama_poli']=$rowdata->nama_poli;
 				$data['id_antrian_poli'] = $rowdata->id_antrian_poli;
 			}else{
-				$data['antrian_pasien']='anda belum mengambil nomor antrian poli';
-				$data['nama_poli']='';
+				$data['antrian_pasien']='-';
+				// $data['antrian_pasien']='anda belum mengambil nomor antrian poli';
+				$data['nama_poli']='-';
+				$data['id_antrian_poli'] ="";
 			}
 
 			$rowPoli = $this->db->get('kategori_poli')->result();

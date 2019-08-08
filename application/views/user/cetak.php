@@ -1,5 +1,5 @@
 <script type="text/javascript">
-	window.print();
+	window.print(); 
 </script>
 <link href="<?php echo base_url('assets/user')?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
