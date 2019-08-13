@@ -6,11 +6,11 @@
             <div class="panel-heading">
                 <div class="row">
                     <div class="col-xs-3">
-                        <i class="fa fa-comments fa-5x"></i>
+                        <!-- <i class="fa fa-comments fa-5x"></i> -->
                     </div>
                     <div class="col-xs-9 text-right">
                         <div class="huge"><?php echo $poli_umum ?></div>
-                        <div>Poli UMUM</div>
+                        <div>Poli Umum</div>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
             <div class="panel-heading">
                 <div class="row">
                     <div class="col-xs-3">
-                        <i class="fa fa-tasks fa-5x"></i>
+                        <!-- <i class="fa fa-tasks fa-5x"></i> -->
                     </div>
                     <div class="col-xs-9 text-right">
                         <div class="huge"><?php echo $poli_gigi?></div>
@@ -50,7 +50,7 @@
             <div class="panel-heading">
                 <div class="row">
                     <div class="col-xs-3">
-                        <i class="fa fa-shopping-cart fa-5x"></i>
+                       <!--  <i class="fa fa-shopping-cart fa-5x"></i> -->
                     </div>
                     <div class="col-xs-9 text-right">
                         <div class="huge"><?php echo $poli_im?></div>
@@ -72,7 +72,7 @@
             <div class="panel-heading">
                 <div class="row">
                     <div class="col-xs-3">
-                        <i class="fa fa-support fa-5x"></i>
+                        <!-- <i class="fa fa-support fa-5x"></i> -->
                     </div>
                     <div class="col-xs-9 text-right">
                         <div class="huge"><?php echo $poli_tb?></div>

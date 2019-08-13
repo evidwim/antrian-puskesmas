@@ -16,7 +16,7 @@ class Antrian_poli extends Super
         $this->status         = true; 
         $this->field_tambah   = array(); 
         $this->field_edit     = array(); 
-        $this->field_tampil   = array(); 
+        $this->field_tampil   = array('id_poli','id_pasien','tgl_antrian_poli','no_antrian_poli'); 
         $this->folder_upload  = 'assets/uploads/files';
         $this->add            = true;
         $this->edit           = false;
@@ -135,8 +135,10 @@ class Antrian_poli extends Super
     }
 
     public function save(){
-        $id_poli = $this->input->post(' ');
-        $no_antrian_poli = substr($this->input->post('no_antrian_poli'),4);
+        // var_dump($_POST); exit();
+        $id_poli = $this->input->post('id_poli');
+        $no_antrian_poli = $this->input->post('no_antrian_poli');
+        // $no_antrian_poli = substr($this->input->post('no_antrian_poli'),4);
         $id_pasien = $this->input->post('id_pasien');
         $tanggal = date("Y-m-d");
 

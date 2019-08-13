@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Puskesmas Rivavi</title>
+  <title>Puskesmas </title>
 
   <!-- Custom fonts for this theme -->
   <link href="<?php echo base_url('assets/user')?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -135,7 +135,7 @@
           <div class="col-md-5 text-right"><label><h5>Nomor Antrian Anda :</label></h5></div>
           <div class="col-md-2 text-justify"><h5><?php echo $antrian_pasien ?></h5></div>
           <?php if(!empty($id_antrian_poli)){?>
-          <div class="col-md-5"><a href="<?php echo base_url('Index/cetak')."/".$id_antrian_poli ?>" style="color: #000; background: #fff; padding: 10px;" target="_blank">cetak</a></div>
+          <div class="col-md-5"><a href="<?php echo base_url('Index/cetak')."/".$id_antrian_poli ?>" style="color: #000; background: #fff; padding: 10px;" target="_blank">Cetak</a></div>
         <?php } ?>
         </div>
         <!-- <div class="row" style="width: 60%;">
@@ -271,7 +271,6 @@
 
         </div>
         <!-- /.row -->
-
       </div>
     <?php } ?>
   </section>
@@ -299,16 +298,17 @@
           <p class="lead">Klik menu Login > Cek Antrian Poli > Pilih Poli</p>
           <p class="lead">Pasien melakukan Registrasi > Input Nomor Identitas, Nama Pasien, Jenis Kelamin, Usia, Tanggal Lahir, Alamat, Nomor Telephone, Username dan Password > Login > Cek Nomor Antrian > Pilih Poli </p>
       </div>
-
+    </div>
+    </div>
       <!-- About Section Button -->
-      <div class="text-center mt-4">
-        <!-- <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
+      <!-- <div class="text-center mt-4">
+        <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
           <i class="fas fa-download mr-2"></i>
           Free Download!
-        </a> -->
-      </div>
-    </div>
-    </div>
+        </a>
+      </div> -->
+    <!-- </div>
+    </div> -->
   </section>
 
   
@@ -411,7 +411,7 @@
             <div align="right">
             <!-- <a href="<?php //echo base_url() ?>"  >Registrasi</a> -->
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-        <button type="submit" class="btn btn-primary">Simpan</button>
+              <button type="submit" class="btn btn-primary">Simpan</button>
             </div>
           
           </form>

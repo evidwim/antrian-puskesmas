@@ -46,7 +46,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </li>
             <div class="clear"> </div>
             <div class="submit">
-                <input type="submit" value="Sign in" name="login">
+                <input type="submit" value="Login" name="login">
                 <!-- <h4><a href="#">Lost your Password ?</a></h4> -->
                 <div class="clear">  </div>
             </div>
