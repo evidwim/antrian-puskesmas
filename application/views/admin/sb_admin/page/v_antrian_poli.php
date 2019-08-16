@@ -56,7 +56,7 @@
 	
 </script>
 <script type="text/javascript" src="<?php echo base_url('assets/admin/sb_admin/js/jquery.js') ?>"></script> 
-<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/bootstrap.min.js"></script> -->
 <script>
     
 

@@ -295,8 +295,8 @@
     <div class="container">  
       <div class="row">
         <div class="col-lg-4.ml-auto" align="center" >
-          <p class="lead">Klik menu Login > Cek Antrian Poli > Pilih Poli</p>
-          <p class="lead">Pasien melakukan Registrasi > Input Nomor Identitas, Nama Pasien, Jenis Kelamin, Usia, Tanggal Lahir, Alamat, Nomor Telephone, Username dan Password > Login > Cek Nomor Antrian > Pilih Poli </p>
+          <p class="lead">Klik Login > Pilih Poli > Klik Cetak</p>
+          <p class="lead">Pasien melakukan Registrasi > Input Nomor Identitas, Nama Pasien, Jenis Kelamin, Usia, Tanggal Lahir, Alamat, Nomor Telephone, Username dan Password > Klik Login >  Pilih Poli > Klik Cetak </p>
       </div>
     </div>
     </div>
