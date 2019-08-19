@@ -37,6 +37,10 @@
     background: white;
     border: thin solid #fff;
   }
+
+  .masthead .masthead-avatar {
+    width: 8rem !important;
+}
 </style>
 
 <body id="page-top">
@@ -74,16 +78,13 @@
 
   <!-- Masthead -->
   <header class="masthead bg-primary text-white text-center">
-    <div class="row" style="margin-top: -80px; margin-left: 180px;">
-      <div class="col-md-1">
-        <img src="<?php echo base_url('assets/user')?>/img/logo.png" alt=""  width="100" height=
-      "100">
-      </div>
-      <div class="col-md-4" style="padding-top: 30px;"><h1>Puskesmas X</h1></div>
-    </div>
     <div class="container d-flex align-items-center flex-column">
 
       <!-- Masthead Avatar Image -->
+      
+
+      <!-- Masthead Heading -->
+      <h1 class="masthead-heading text-uppercase mb-0"><img class="masthead-avatar mb-5" src="<?php echo base_url('assets/user') ?>/img/logo.png" alt="">Puskesmas X</h1>
       <div class="row">
           <div class="col-md-12" style="border: thin solid; ">
             <h3>NO ANTRIAN SAAT INI</h3>
@@ -91,63 +92,55 @@
           </div>
       </div>
       <?php if(!empty($this->session->userdata('id_pasien'))){ ?>
-      <div class="row" style="margin-top: 60px">
-        <div class="col-md-3" style="border: thin solid; ">
-          <h3><?php echo $poli_umum; ?></h3>
-          <H6>Poli Umum</H6>
+        <div class="row" style="margin-top: 60px">
+          <div class="col-md-3" style="border: thin solid; ">
+            <h3><?php echo $poli_umum; ?></h3>
+            <H6>Poli Umum</H6>
+          </div>
+          <div class="col-md-3" style="border: thin solid; ">
+            <h3><?php echo $poli_gigi; ?></h3>
+            <H6>Poli Gigi</H6></div>
+          <div class="col-md-3" style="border: thin solid; ">
+            <h3><?php echo $poli_im; ?></h3>
+            <H6>Poli Imunisasi</H6></div>
+          <div class="col-md-3" style="border: thin solid; ">
+            <h3><?php echo $poli_tb; ?>
+            <H6>Poli Tuberculosis</H6></div>
         </div>
-        <div class="col-md-3" style="border: thin solid; ">
-          <h3><?php echo $poli_gigi; ?></h3>
-          <H6>Poli Gigi</H6></div>
-        <div class="col-md-3" style="border: thin solid; ">
-          <h3><?php echo $poli_im; ?></h3>
-          <H6>Poli Imunisasi</H6></div>
-        <div class="col-md-3" style="border: thin solid; ">
-          <h3><?php echo $poli_tb; ?>
-          <H6>Poli Tuberculosis</H6></div>
-      </div>
-    <?php } ?>
-
-      <!-- Masthead Heading -->
-
+      <?php } ?>
       <?php if(empty($this->session->userdata('id_pasien'))){ ?>
-      <h4 class="masthead mb-0" style="margin-top: 10px !important;padding: 20px;">Selamat Datang di Puskesmas X. 
+        <h4 class="masthead mb-0" style="margin-top: 10px !important;padding: 20px;">Selamat Datang di Puskesmas X. 
         <br> Jika anda belum memiliki akun, silakan Registrasi terlebih dahulu.</h4>
         <button type="button" class="btn btncostume" data-toggle="modal" data-target="#exampleModal">
           Registrasi
         </button>
       <?php } ?>
-
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
           <i class="fas fa-star"></i>
-
         </div>
         <div class="divider-custom-line"></div>
       </div>
 
       <!-- Masthead Subheading -->
-      <!-- <p class="masthead-subheading font-weight-light mb-0">Jalan Kenangan Indah 4E No.16 Rt.07/Rw.98</p> -->
       <?php if(!empty($this->session->userdata('id_pasien'))){ ?>
         <div class="row" style="width: 60%;">
-          <div class="col-md-5 text-right"><label><h5>Nomor Antrian Anda :</label></h5></div>
+          <div class="col-md-5 text-right">
+            <label><h5>Nomor Antrian Anda :</label></h5>
+          </div>
           <div class="col-md-2 text-justify"><h5><?php echo $antrian_pasien ?></h5></div>
           <?php if(!empty($id_antrian_poli)){?>
-          <div class="col-md-5"><a href="<?php echo base_url('Index/cetak')."/".$id_antrian_poli ?>" style="color: #000; background: #fff; padding: 10px;" target="_blank">Cetak</a></div>
-        <?php } ?>
+            <div class="col-md-5"><a href="<?php echo base_url('Index/cetak')."/".$id_antrian_poli ?>" style="color: #000; background: #fff; padding: 10px;" target="_blank">Cetak</a></div>
+          <?php } ?>
         </div>
-        <!-- <div class="row" style="width: 60%;">
-          <div class="col-md-5 text-right"><label><h5>Nomor Antrian Anda :</label></h5></div>
-          <div class="col-md-2 text-justify"><h5><?php echo $antrian_pasien ?></h5></div>
-          <div class="col-md-1"><a href="<?php echo base_url('Index/cetak')."/".$id_antrian_poli ?>" style="color: #000; background: #fff; padding: 10px;" target="_blank">cetak</a></div>
-        </div> -->
         <div class="row" style="width: 60%;">
           <div class="col-md-5 text-right"><label><h5>Poli :</label></h5></div>
           <div class="col-md-5 text-justify"><h5><?php echo $nama_poli?></h5></div>
         </div>
       <?php } ?>
+
     </div>
   </header>
 
@@ -258,9 +251,9 @@
                  <h6>Keterangan :</h6>
                   <ol>
                     <li>Poli Umum (PLUM)</li>
-                    <li>Poli Gigi(PLGG) </li>
-                    <li>Poli Imunisasi(PLIM)</li>
-                    <li>Poli Tuberculosis(PLTB)</li>
+                    <li>Poli Gigi (PLGG) </li>
+                    <li>Poli Imunisasi (PLIM)</li>
+                    <li>Poli Tuberculosis (PLTB)</li>
                   </ol>
               </div>
               </div>
@@ -312,6 +305,7 @@
   </section>
 
   
+
 
   <!-- Footer -->
   <footer class="footer text-center">
